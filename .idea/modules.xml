@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IR-Project.iml" filepath="$PROJECT_DIR$/IR-Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CS309-IR-Monsoon-2017-Off-by-One.iml" filepath="$PROJECT_DIR$/.idea/CS309-IR-Monsoon-2017-Off-by-One.iml" />
     </modules>
   </component>
 </project>
