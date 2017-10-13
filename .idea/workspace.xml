@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee2f8ad3-37d8-4224-8188-6e9f87e65b8d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/quotes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spelling_mistakes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/term_frequency.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tools/pos_tagger.py" afterPath="$PROJECT_DIR$/Tools/pos_tagger.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tools/tense.py" afterPath="$PROJECT_DIR$/Tools/tense.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,26 +15,73 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$tense.coverage" NAME="tense Coverage Results" MODIFIED="1507801604561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$sentence_count.coverage" NAME="sentence_count Coverage Results" MODIFIED="1507100427601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$words_per_sentence.coverage" NAME="words_per_sentence Coverage Results" MODIFIED="1507101971110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$point_of_view.coverage" NAME="point_of_view Coverage Results" MODIFIED="1507808422928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$word_count.coverage" NAME="word_count Coverage Results" MODIFIED="1507100257708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
     <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$HelloWorld.coverage" NAME="HelloWorld Coverage Results" MODIFIED="1506015831427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$term_frequency.coverage" NAME="term_frequency Coverage Results" MODIFIED="1506263003350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$term_frequency.coverage" NAME="term_frequency Coverage Results" MODIFIED="1507099171845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$voice.coverage" NAME="voice Coverage Results" MODIFIED="1507877997379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
+    <SUITE FILE_PATH="coverage/CS309_IR_Monsoon_2017_Off_by_One$pos_tagger.coverage" NAME="pos_tagger Coverage Results" MODIFIED="1507800860885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hello_world.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello_world.py">
+      <file leaf-file-name="word_count.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/word_count.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quotes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tools/quotes.py">
+      <file leaf-file-name="sentence_count.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/sentence_count.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pos_tagger.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/pos_tagger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tense.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/tense.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="point_of_view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/point_of_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voice.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tools/voice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -51,13 +97,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="term_frequency.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tools/term_frequency.py">
+      <file leaf-file-name="words_per_sentence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/words_per_sentence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +133,13 @@
         <option value="$PROJECT_DIR$/quotes.py" />
         <option value="$PROJECT_DIR$/term_frequency.py" />
         <option value="$PROJECT_DIR$/test/sample.txt" />
+        <option value="$PROJECT_DIR$/Tools/word_count.py" />
+        <option value="$PROJECT_DIR$/Tools/words_per_sentence.py" />
+        <option value="$PROJECT_DIR$/Tools/sentence_count.py" />
+        <option value="$PROJECT_DIR$/Tools/tense.py" />
+        <option value="$PROJECT_DIR$/Tools/pos_tagger.py" />
+        <option value="$PROJECT_DIR$/Tools/point_of_view.py" />
+        <option value="$PROJECT_DIR$/Tools/voice.py" />
       </list>
     </option>
   </component>
@@ -96,10 +149,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="width" value="1366" />
+    <option name="height" value="676" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -119,7 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +189,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -145,6 +198,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Tools" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,25 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.term_frequency">
-    <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS309-IR-Monsoon-2017-Off-by-One" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello_world.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.voice">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -258,32 +299,110 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="term_frequency" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="point_of_view" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CS309-IR-Monsoon-2017-Off-by-One" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/term_frequency.py" />
-      <option name="PARAMETERS" value="$PROJECT_DIR$/test" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/point_of_view.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.HelloWorld" />
-      <item index="1" class="java.lang.String" itemvalue="Python.term_frequency" />
+    <configuration name="pos_tagger" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS309-IR-Monsoon-2017-Off-by-One" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/pos_tagger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="tense" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS309-IR-Monsoon-2017-Off-by-One" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/tense.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="voice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS309-IR-Monsoon-2017-Off-by-One" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/voice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="words_per_sentence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS309-IR-Monsoon-2017-Off-by-One" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/words_per_sentence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.words_per_sentence" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pos_tagger" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tense" />
+      <item index="3" class="java.lang.String" itemvalue="Python.point_of_view" />
+      <item index="4" class="java.lang.String" itemvalue="Python.voice" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.term_frequency" />
-        <item index="1" class="java.lang.String" itemvalue="Python.HelloWorld" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.voice" />
+        <item index="1" class="java.lang.String" itemvalue="Python.point_of_view" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tense" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pos_tagger" />
+        <item index="4" class="java.lang.String" itemvalue="Python.words_per_sentence" />
       </list>
     </recent_temporary>
   </component>
@@ -305,20 +424,20 @@
     <option name="totallyTimeSpent" value="171000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="712" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="676" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32781458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -350,50 +469,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello_world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/term_frequency.py">
+    <entry file="file://$PROJECT_DIR$/Tools/word_count.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quotes.py">
+    <entry file="file://$PROJECT_DIR$/Tools/words_per_sentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spelling_mistakes.py">
+    <entry file="file://$PROJECT_DIR$/Tools/sentence_count.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello_world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/term_frequency.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -402,54 +499,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/term_frequency.py" />
+    <entry file="file://$PROJECT_DIR$/quotes.py" />
+    <entry file="file://$PROJECT_DIR$/spelling_mistakes.py" />
+    <entry file="file://$PROJECT_DIR$/hello_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/term_frequency.py" />
+    <entry file="file://$PROJECT_DIR$/hello_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java" />
-    <entry file="file://$PROJECT_DIR$/quotes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/sample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/term_frequency.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spelling_mistakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/quotes.py" />
+    <entry file="file://$PROJECT_DIR$/test/sample.txt" />
+    <entry file="file://$PROJECT_DIR$/term_frequency.py" />
+    <entry file="file://$PROJECT_DIR$/spelling_mistakes.py" />
     <entry file="file://$PROJECT_DIR$/hello_world.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/quotes.py" />
+    <entry file="file://$PROJECT_DIR$/test_file_for_spelling.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/term_frequency.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/word_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/quotes.py">
+    <entry file="file://$PROJECT_DIR$/Tools/words_per_sentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/sentence_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -462,13 +588,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/term_frequency.py">
+    <entry file="file://$PROJECT_DIR$/Tools/pos_tagger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1080">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/tense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/point_of_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/voice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

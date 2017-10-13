@@ -1,6 +1,5 @@
 import nltk
 
-
 # Tags
 # CC | Coordinating conjunction |
 # CD | Cardinal number |
@@ -69,3 +68,5 @@ def tag(string, return_words):
 
     print("Second argument not defined. Returning all tagged words!")
     return tagged_words
+
+
