@@ -1,7 +1,7 @@
-from textstat.textstat import textstat
+from nltk import sent_tokenize
+
 
 def sentence_count(text):
-    count = textstat.sentence_count(text)
+    sentences = sent_tokenize(text)
+    count = len(sentences)
     return (count)
-
-
