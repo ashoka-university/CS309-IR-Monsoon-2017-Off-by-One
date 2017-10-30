@@ -1,11 +1,8 @@
 from Tools import sentence_count
 
 
-def sentences_per_paragraph(file):
+def sentences_per_paragraph(paragraphs):
     sent_count = []
-    f = open(file).read()
-    paragraphs = f.split('\n')
-
     for para in paragraphs:
         if para != "":
             sent_count.append(sentence_count.sentence_count(para))

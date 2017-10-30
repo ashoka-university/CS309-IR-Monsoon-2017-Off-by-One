@@ -1,4 +1,4 @@
-import enchant, sys
+import enchant
 
 start_list = ['"', '(', '"(', '("']
 end_list = ['.', ',', '/', '?', '!', ';', ':', ')', '...', '".', '",', '?"', '!"', '";', ':"', ';"', '":', '")', ')"',
@@ -34,14 +34,14 @@ def remove_punctuation(non_alpha_word):
     return non_alpha_word
 
 
-file = open(sys.argv[1], 'r')
-words = file.read().split()
-length_of_words = len(words)
+def get_spell_check_count(text):
+    words = text.split()
 
-final_alpha_words = []
+    final_alpha_words = []
 
-for word in words:
-    if not word.isalpha():
-        word = remove_punctuation(word)
-    final_alpha_words.append(word)
-print(spell_check(final_alpha_words))
+    for word in words:
+        if not word.isalpha():
+            word = remove_punctuation(word)
+        final_alpha_words.append(word)
+    spell_errors, count = spell_check(final_alpha_words)
+    return spell_errors, count, len(final_alpha_words)

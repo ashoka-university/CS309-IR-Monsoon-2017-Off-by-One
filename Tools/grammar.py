@@ -12,8 +12,7 @@ def check_grammar_of_str(string):
     return score
 
 
-def check_grammar(string):
-    sentences = nltk.sent_tokenize(string)
+def check_grammar(sentences):
     score = 0
     for sentence in sentences:
         score += check_grammar_of_str(sentence)
