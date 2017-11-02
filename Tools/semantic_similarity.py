@@ -1,7 +1,9 @@
-from nltk import word_tokenize, pos_tag
+from nltk import word_tokenize, pos_tag, sent_tokenize
 from nltk.corpus import wordnet as wn
 import nltk.data
 
+
+# nltk.download('wordnet') - necessary if we are using wordnet
 
 # returns the first letter of the pos_tag of a word
 def penn_to_wn(tag):
@@ -51,14 +53,32 @@ def sentence_similarity(sentence1, sentence2):
         score += best_score
         count += 1
 
+    if count == 0:
+        count = 1
+
     score /= count
     return score
 
 
 def inter_para_semantic_similarity(str1, str2):
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-    sentences_from_str1 = tokenizer.tokenize(str1)
-    sentences_from_str2 = tokenizer.tokenize(str2)
+    sentences_from_str1 = sent_tokenize(str1)
+    sentences_from_str2 = sent_tokenize(str2)
+
+    initial_num_of_sentences = len(sentences_from_str1)
+    indexes = []
+    for i in range(initial_num_of_sentences):
+        if len(word_tokenize(sentences_from_str1[i])) < 4:
+            indexes.append(i)
+    for index in reversed(indexes):
+        del sentences_from_str1[index]
+
+    initial_num_of_sentences = len(sentences_from_str2)
+    indexes = []
+    for i in range(initial_num_of_sentences):
+        if len(word_tokenize(sentences_from_str2[i])) < 4:
+            indexes.append(i)
+    for index in reversed(indexes):
+        del sentences_from_str2[index]
 
     score, count = 0.0, 0
 
@@ -72,8 +92,15 @@ def inter_para_semantic_similarity(str1, str2):
 
 
 def intra_para_semantic_similarity(str1):
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-    sentences_from_str1 = tokenizer.tokenize(str1)
+    sentences_from_str1 = sent_tokenize(str1)
+    initial_num_of_sentences = len(sentences_from_str1)
+    indexes = []
+
+    for i in range(initial_num_of_sentences):
+        if len(word_tokenize(sentences_from_str1[i])) < 4:
+            indexes.append(i)
+    for index in reversed(indexes):
+        del sentences_from_str1[index]
 
     num_of_sentences = len(sentences_from_str1)
     score, count = 0.0, 0
@@ -82,7 +109,6 @@ def intra_para_semantic_similarity(str1):
         for j in range(i + 1, num_of_sentences):
             score += sentence_similarity(sentences_from_str1[i], sentences_from_str1[j])
             count += 1
-            print(sentences_from_str1[i], sentences_from_str1[j], score)
 
     score /= count
     return score

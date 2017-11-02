@@ -8,15 +8,13 @@ def words_per_sentence(text):
     return (words / sentences)
 
 
-def long_sentences_average_length(sentences, average_sentence_length):
-    long_sentence_length_avg_value = 0
+def long_sentences_score(sentences, average_sentence_length):
     sentence_length = []
     for sentence in sentences:
         sentence_length.append(word_count.word_count(sentence))
-    long_sentences_count = 0
+    long_sentences_proportion = 0
     for length in sentence_length:
         if length > average_sentence_length:
-            long_sentences_count += 1
-            long_sentence_length_avg_value += length
-    long_sentence_length_avg_value /= long_sentences_count
-    return long_sentence_length_avg_value
+            long_sentences_proportion += 1
+    long_sentences_proportion /= len(sentences)
+    return long_sentences_proportion
