@@ -1,4 +1,5 @@
 import enchant
+from enchant.checker import SpellChecker
 
 start_list = ['"', '(', '"(', '("']
 end_list = ['.', ',', '/', '?', '!', ';', ':', ')', '...', '".', '",', '?"', '!"', '";', ':"', ';"', '":', '")', ')"',
@@ -45,3 +46,14 @@ def get_spell_check_count(text):
         final_alpha_words.append(word)
     spell_errors, count = spell_check(final_alpha_words)
     return spell_errors, count, len(final_alpha_words)
+
+
+def get_spell_errors_count(text):
+    count = 0
+    errors = []
+    chkr = SpellChecker("en_US")
+    chkr.set_text(text)
+    for err in chkr:
+        count += 1
+        errors.append(err.word)
+    return errors, count
