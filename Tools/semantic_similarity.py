@@ -87,6 +87,9 @@ def inter_para_semantic_similarity(str1, str2):
             score += sentence_similarity(sentence1, sentence2)
             count += 1
 
+    if count == 0:
+        return 0
+
     score /= count
     return score
 
@@ -109,6 +112,9 @@ def intra_para_semantic_similarity(str1):
         for j in range(i + 1, num_of_sentences):
             score += sentence_similarity(sentences_from_str1[i], sentences_from_str1[j])
             count += 1
+
+    if count == 0:
+        return 0
 
     score /= count
     return score
