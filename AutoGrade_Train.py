@@ -1,4 +1,5 @@
-from Tools import word_count, words_per_sentence, voice, tense, grammar, spelling_mistakes, semantic_similarity
+from Tools import word_count, words_per_sentence, voice, tense, grammar, spelling_mistakes, semantic_similarity, \
+    vocabulary
 from nltk import sent_tokenize
 import csv
 from openpyxl import load_workbook
@@ -14,7 +15,7 @@ def get_attributes(topic_essay, full_essay):
     word_limit = 500
     word_count_limit_ratio = abs(1 - (num_of_words / word_limit))
     attributes.append(["Word count limit ratio", word_count_limit_ratio])
-
+    #
     # ---------------Attribute 2-----------------
     # proportion of all sentences of length > 15
     sentences = sent_tokenize(full_essay)
@@ -53,11 +54,16 @@ def get_attributes(topic_essay, full_essay):
     essay_semantic_similarity = essay_semantic_similarity * (math.log(num_of_sentences, 2))
     attributes.append(["SS Essay", essay_semantic_similarity])
 
-    # ---------------Attribute 7-----------------
+    # ---------------Attribute 8-----------------
     # semantic similarity of the topic and essay
     topic_essay_semantic_similarity = semantic_similarity.inter_para_semantic_similarity(topic_essay, full_essay)
     topic_essay_semantic_similarity = topic_essay_semantic_similarity * (math.log(num_of_sentences, 2))
     attributes.append(["SS Topic Essay", topic_essay_semantic_similarity])
+    #
+    # ---------------Attribute 9-----------------
+    # semantic similarity of the topic and essay
+    vocabulary_words, vocabulary_size = vocabulary.get_vocab(full_essay)
+    attributes.append(["Vocabulary", vocabulary_size / word_limit])
 
     return attributes
 
@@ -99,4 +105,4 @@ for row in ws.rows:
         attributes_with_values.append(["Score", score])
         attributes_with_values.append(["Essay ID", essay_id])
         attributes_with_values.append(["Essay Set", essay_set])
-        write_to_csv(attributes_with_values, "data_train2.csv")
+        write_to_csv(attributes_with_values, "data_train_vocab.csv")
