@@ -6,13 +6,12 @@ from openpyxl import load_workbook
 import math
 
 
-def get_attributes(topic_essay, full_essay):
+def get_attributes(topic_essay, full_essay, word_limit):
     attributes = []
 
     # ---------------Attribute 1-----------------
     # |word_count/word_limit| will be the value, too high is bad
     num_of_words = word_count.word_count(full_essay)
-    word_limit = 500
     word_count_limit_ratio = abs(1 - (num_of_words / word_limit))
     attributes.append(["Word count limit ratio", word_count_limit_ratio])
     #
@@ -86,23 +85,26 @@ def write_to_csv(attr_with_values, csv_file_path):
         writer.writerow(data)
 
 
-file_path = "Data/training_set_rel3_set1.xlsx"
-wb = load_workbook(filename=file_path, read_only=True)
-ws = wb['training_set']
+def train_data():
+    file_path = "Data/valid_set_set1.xlsx"
+    wb = load_workbook(filename=file_path, read_only=True)
+    ws = wb['valid_set']
 
-for row in ws.rows:
-    essay_id = row[0].value
-    essay_set = row[1].value
-    essay = row[2].value
-    score = row[6].value
-    topic = ""
-    if essay_set == 1:
-        topic = "More and more people use computers, but not everyone agrees that this benefits society. Those who support advances in technology believe that computers have a positive effect on people. They teach hand-eye coordination, give people the ability to learn about faraway places and people, and even allow people to talk online with other people. Others have different ideas. Some experts are concerned that people are spending too much time on their computers and less time exercising, enjoying nature, and interacting with family and friends."
-        print("------------------------------------------------------")
-        print(essay_id)
-    if topic != "":
-        attributes_with_values = get_attributes(topic, essay)
-        attributes_with_values.append(["Score", score])
-        attributes_with_values.append(["Essay ID", essay_id])
-        attributes_with_values.append(["Essay Set", essay_set])
-        write_to_csv(attributes_with_values, "data_train_vocab.csv")
+    for row in ws.rows:
+        essay_id = row[0].value
+        essay_set = row[1].value
+        essay = row[2].value
+        score = row[6].value
+        topic = ""
+        if essay_set == 1:
+            topic = "More and more people use computers, but not everyone agrees that this benefits society. Those who support advances in technology believe that computers have a positive effect on people. They teach hand-eye coordination, give people the ability to learn about faraway places and people, and even allow people to talk online with other people. Others have different ideas. Some experts are concerned that people are spending too much time on their computers and less time exercising, enjoying nature, and interacting with family and friends."
+            print("------------------------------------------------------")
+            print(essay_id)
+        if topic != "":
+            attributes_with_values = get_attributes(topic, essay, 500)
+            attributes_with_values.append(["Score", score])
+            attributes_with_values.append(["Essay ID", essay_id])
+            attributes_with_values.append(["Essay Set", essay_set])
+            write_to_csv(attributes_with_values, "test_data.csv")
+
+# train_data()
