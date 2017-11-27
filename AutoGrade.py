@@ -16,12 +16,15 @@ def get_topic_essay(filename):
         if paragraph.text:
             paragraphs.append(paragraph.text)
     if len(paragraphs) < 2:
-        return 1
+        print(
+            "Error: Only one paragraph is in the document. Document must contain at least 2 paragraphs where the first one is the topic.")
+        jvm.stop()
+        exit(1)
     topic = paragraphs[0]
     del paragraphs[0]
     for paragraph in paragraphs:
         essay += paragraph
-    return [topic, essay]
+    return topic, essay
 
 
 def discretize_data(input_data):
