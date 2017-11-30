@@ -4,6 +4,7 @@ from nltk import sent_tokenize
 import csv
 from openpyxl import load_workbook
 import math
+import os
 
 
 def get_attributes(topic_essay, full_essay, word_limit):
@@ -24,14 +25,18 @@ def get_attributes(topic_essay, full_essay, word_limit):
     # ---------------Attribute 3-----------------
     # voice: number of active voice sentences / total
     [active_voice, passive_voice] = voice.check_voice(full_essay)
-    voice_ratio = active_voice / (active_voice + passive_voice)
+    voice_ratio = 0
+    if active_voice + passive_voice != 0:
+        voice_ratio = active_voice / (active_voice + passive_voice)
     attributes.append(["Voice", voice_ratio])
 
     # ---------------Attribute 4-----------------
     # tense: dominant tense verbs / total verbs
     total_verbs, present, past, future = tense.check_tense(full_essay)
     dominant_tense_verbs = max(present, past, future)
-    tense_ratio = dominant_tense_verbs / total_verbs
+    tense_ratio = 0
+    if total_verbs != 0:
+        tense_ratio = dominant_tense_verbs / total_verbs
     attributes.append(["Tense", tense_ratio])
 
     # ---------------Attribute 5-----------------
@@ -60,7 +65,7 @@ def get_attributes(topic_essay, full_essay, word_limit):
     attributes.append(["SS Topic Essay", topic_essay_semantic_similarity])
     #
     # ---------------Attribute 9-----------------
-    # semantic similarity of the topic and essay
+    # vocabulary
     vocabulary_words, vocabulary_size = vocabulary.get_vocab(full_essay)
     attributes.append(["Vocabulary", vocabulary_size / word_limit])
 

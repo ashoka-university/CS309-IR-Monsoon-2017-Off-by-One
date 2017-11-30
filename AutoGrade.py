@@ -71,6 +71,7 @@ def get_docs(dir_path):
     print("---------------------------------------------------------")
     print("Grading the following documents:")
     print(docs)
+    print()
     return docs
 
 
@@ -102,8 +103,8 @@ essay_word_limit = int(sys.argv[2])
 for doc in documents:
     print("-------------------------- " + "Document: " + doc + " -------------------------------")
     essay_topic, essay_content = get_topic_essay(doc)
-    essay_data = get_essay_data(essay_topic, essay_content, essay_word_limit)
     predicted_scores = []
+    essay_data = get_essay_data(essay_topic, essay_content, essay_word_limit)
     for classifier in classifiers:
         essay_score = get_essay_score(essay_data, classifier)
         predicted_scores.append(essay_score)
@@ -112,3 +113,5 @@ for doc in documents:
         print(classifier_names[i] + " : " + str(predicted_scores[i]))
 
 jvm.stop()
+
+# bad_essay/1Complex_Bad_Essay.docx
