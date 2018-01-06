@@ -6,7 +6,7 @@ import csv
 
 jvm.start()
 loader = Loader(classname="weka.core.converters.CSVLoader")
-data_train = loader.load_file("data_train.csv")
+data_train = loader.load_file("Data/data_train_set1.csv")
 data_train.class_is_last()
 
 knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "3"])
@@ -24,21 +24,24 @@ for classifier in classifiers:
     print("~~~~~~~~~~~~~~~~~~~")
     print(classifier)
 
-data_test = loader.load_file("data_test.csv")
+data_test = loader.load_file("Data/data_test_set1.csv")
 data_test.class_is_last()
 
 actual_scores = []
-with open('data_test.csv') as csvfile:
+with open('Data/data_test_set1.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         actual_scores.append(row['Score'])
 
-result_csv = "test_result.csv"
+result_csv = "Data/test_result_set1.csv"
 with open(result_csv, 'wb') as csvfile:
     print()
 csvfile.close()
 
+print(data_test)
+
 for index, inst in enumerate(data_test):
+    print(index)
     knn_score = int(knn_classifier.classify_instance(inst))
     lin_score = int(lin_classifier.classify_instance(inst))
     svm_score = int(svm_classifier.classify_instance(inst))

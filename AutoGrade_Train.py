@@ -14,11 +14,13 @@ def get_attributes(topic_essay, full_essay, word_limit):
     # |word_count/word_limit| will be the value, too high is bad
     num_of_words = word_count.word_count(full_essay)
     word_count_limit_ratio = abs(1 - (num_of_words / word_limit))
+    attributes.append(["Word count", num_of_words])
     attributes.append(["Word count limit ratio", word_count_limit_ratio])
-    #
+
     # ---------------Attribute 2-----------------
     # proportion of all sentences of length > 15
     sentences = sent_tokenize(full_essay)
+    attributes.append(["Sentence count", len(sentences)])
     sentence_length_value = words_per_sentence.long_sentences_score(sentences, 15)
     attributes.append(["Long sentences", sentence_length_value])
 
@@ -91,7 +93,7 @@ def write_to_csv(attr_with_values, csv_file_path):
 
 
 def train_data():
-    file_path = "Data/valid_set_set1.xlsx"
+    file_path = "Data/valid_set_set8.xlsx"
     wb = load_workbook(filename=file_path, read_only=True)
     ws = wb['valid_set']
 
@@ -99,17 +101,18 @@ def train_data():
         essay_id = row[0].value
         essay_set = row[1].value
         essay = row[2].value
-        score = row[6].value
+        score = row[3].value
         topic = ""
-        if essay_set == 1:
-            topic = "More and more people use computers, but not everyone agrees that this benefits society. Those who support advances in technology believe that computers have a positive effect on people. They teach hand-eye coordination, give people the ability to learn about faraway places and people, and even allow people to talk online with other people. Others have different ideas. Some experts are concerned that people are spending too much time on their computers and less time exercising, enjoying nature, and interacting with family and friends."
+        if essay_set == 8:
+            topic = "If you want a place in the sun, you will have to expect some blisters."
             print("------------------------------------------------------")
             print(essay_id)
         if topic != "":
-            attributes_with_values = get_attributes(topic, essay, 500)
+            attributes_with_values = get_attributes(topic, essay, 800)
             attributes_with_values.append(["Score", score])
             attributes_with_values.append(["Essay ID", essay_id])
             attributes_with_values.append(["Essay Set", essay_set])
-            write_to_csv(attributes_with_values, "test_data.csv")
+            write_to_csv(attributes_with_values, "data_test_set8.csv")
+
 
 # train_data()
