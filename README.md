@@ -13,12 +13,12 @@ The project was developed on Python 3.
 
 Following are the packages you will need to install.
 
-[language_check](https://pypi.python.org/pypi/language-check)
-[enchant](https://pythonhosted.org/pyenchant/)
-[spacy](https://pypi.python.org/pypi/spacy)
-[nltk](https://pypi.python.org/pypi/nltk)
-[textstat](https://github.com/shivam5992/textstat)
-[python-weka-wrapper3](https://github.com/fracpete/python-weka-wrapper3)
+* [language_check](https://pypi.python.org/pypi/language-check)
+* [enchant](https://pythonhosted.org/pyenchant/)
+* [spacy](https://pypi.python.org/pypi/spacy)
+* [nltk](https://pypi.python.org/pypi/nltk)
+* [textstat](https://github.com/shivam5992/textstat)
+* [python-weka-wrapper3](https://github.com/fracpete/python-weka-wrapper3)
 
 Run the following python commands only once on your system to download all the required nltk packages:
 
