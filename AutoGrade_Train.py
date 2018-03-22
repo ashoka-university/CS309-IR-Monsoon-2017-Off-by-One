@@ -108,11 +108,13 @@ def train_data():
             print("------------------------------------------------------")
             print(essay_id)
         if topic != "":
-            attributes_with_values = get_attributes(topic, essay, 800)
+            word_limit = 800
+            attributes_with_values = get_attributes(topic, essay, word_limit)
             attributes_with_values.append(["Score", score])
             attributes_with_values.append(["Essay ID", essay_id])
             attributes_with_values.append(["Essay Set", essay_set])
-            write_to_csv(attributes_with_values, "data_test_set8.csv")
+            write_to_file = "data_test_set8.csv"
+            write_to_csv(attributes_with_values, write_to_file)
 
 
 # train_data()

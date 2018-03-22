@@ -4,14 +4,19 @@ import weka.core.jvm as jvm
 from AutoGrade_Train import write_to_csv
 import csv
 
+train_csv = "Data/data_train_set8.csv"
+test_csv = "Data/data_test_set8.csv"
+result_csv = "Data/test_result_set8_k5s2c10.csv"
+
 jvm.start()
 loader = Loader(classname="weka.core.converters.CSVLoader")
-data_train = loader.load_file("Data/data_train_set1.csv")
+
+data_train = loader.load_file(train_csv)
 data_train.class_is_last()
 
-knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "3"])
-lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "0"])
-svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "1.0"])
+knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "5"])
+lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "2"])
+svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "10.0"])
 
 knn_classifier.build_classifier(data_train)
 lin_classifier.build_classifier(data_train)
@@ -24,16 +29,15 @@ for classifier in classifiers:
     print("~~~~~~~~~~~~~~~~~~~")
     print(classifier)
 
-data_test = loader.load_file("Data/data_test_set1.csv")
+data_test = loader.load_file(test_csv)
 data_test.class_is_last()
 
 actual_scores = []
-with open('Data/data_test_set1.csv') as csvfile:
+with open(test_csv) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         actual_scores.append(row['Score'])
 
-result_csv = "Data/test_result_set1.csv"
 with open(result_csv, 'wb') as csvfile:
     print()
 csvfile.close()
