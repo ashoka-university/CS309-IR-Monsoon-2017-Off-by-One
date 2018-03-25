@@ -75,7 +75,7 @@ Each attribute calculated for an essay is developed as a tool. Code for a partic
 
 Main python files: AutoGrade.py, AutoGrade_Test.py and AutoGrade_Train.py, Evaluation.py (in Evaluation Folder)
 
-## AutoGrade_Train.py
+### AutoGrade_Train.py
 
 This python program is used to process the essays in the (1) and (3).
 Change the 'file_path', 'ws', 'essay_set', 'topic', 'word_limit', 'write_to_file' variables in the train_data() function according to your dataset (file).
@@ -96,7 +96,7 @@ write_to_file = "data_test_set8.csv"
 ```
 This program has to be run on all the .xlsx files (that contain raw essays) present in the data folder to obtain the processed data that is required to train the test the models.
 
-## AutoGrade_Test.py
+### AutoGrade_Test.py
 
 This program builds models using the weka packaged, takes training data and test data, and predicts score for all the essays in the test data. The predicted scores are then written to a csv. 
 
@@ -110,7 +110,7 @@ result_csv = "Data/test_result_set1.csv"
 The 'result_csv' file will contain the scores predicted by all 3 models: kNN, Linear Regression and SVM and also the actual score of the essay.
 It can then be used for evaluation.
 
-## AutoGrade.py
+### AutoGrade.py
 
 AutoGrade.py is written keeping in mind a non-technical user. AutoGrade.py is useful for users who want to grade essays present in the word documents in a folder. 
 
@@ -124,7 +124,7 @@ Eg command: python3 AutoGrade.py essays/AshokaUniversity/PoliticalScience 1000
 
 The above command predicts the scores of all the essays present in the 'PoliticalScience' folder.
 
-## Evaluation.py
+### Evaluation.py
 
 The 'result_csv' files that are obtained from AutoGrade_Test.py program can be used to evaluate our models. 
 After running AutoGrade_Test.py on all the sets, we have gotten:
