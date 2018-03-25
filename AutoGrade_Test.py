@@ -14,9 +14,18 @@ loader = Loader(classname="weka.core.converters.CSVLoader")
 data_train = loader.load_file(train_csv)
 data_train.class_is_last()
 
-knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "5"])
-lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "2"])
-svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "10.0"])
+knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "3"])
+# knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "4"])
+# knn_classifier = Classifier(classname="weka.classifiers.lazy.IBk", options=["-K", "5"])
+
+lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "0"])
+# lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "1"])
+# lin_classifier = Classifier(classname="weka.classifiers.functions.LinearRegression", options=["-S", "2"])
+
+svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "1.0"])
+# svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "0.1"])
+# svm_classifier = Classifier(classname="weka.classifiers.functions.SMOreg", options=["-C", "10.0"])
+
 
 knn_classifier.build_classifier(data_train)
 lin_classifier.build_classifier(data_train)
